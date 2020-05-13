@@ -1,0 +1,26 @@
+.textblock
+{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: inherit;
+}
+.title
+{
+
+  text-align: 'left';
+  margin-left: 46px;
+  font-size: 50px;
+}
+
+.description{
+  text-align: center;
+}
+
+.desctext{
+  font-size: 30px;
+}
+
+.imageContainer {
+  position: relative;
+}
