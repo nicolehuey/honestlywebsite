@@ -1,9 +1,22 @@
 h1
 {
   font-family: "Avenir-Black";
+  color:"black"
 }
 
 h2
 {
     font-family:"Avenir-BlackOblique";
+}
+* {
+text-decoration: none!important;
+}
+
+.link {
+   color: #000000;
+   font-family: "Avenir-Black";
+}
+
+.link:hover {
+  color: #FFF000;
 }

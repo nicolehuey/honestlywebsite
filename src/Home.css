@@ -1,20 +1,16 @@
 .textblock
 {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding: inherit;
+  text-align: center;
 }
 .title
 {
-
-  text-align: 'left';
   margin-left: 46px;
   font-size: 50px;
 }
 
 .description{
   text-align: center;
+  margin:50px 0 0 0;
 }
 
 .desctext{
@@ -23,4 +19,38 @@
 
 .imageContainer {
   position: relative;
+}
+
+.playbutton{
+  font-family:"Avenir-Black";
+  font-size: 20px;
+  border-radius:2em;
+  padding:0.3em 1.2em;
+  background-color:	#000000;
+  color: #FFFFFF;
+  margin:70px 0 0 0;
+}
+
+.menu
+{
+
+}
+
+.icons {
+  font-size: 20px;
+  padding-top: 30px;
+  margin-left: 800px;
+  display: inline-block;
+}
+
+#home{
+  padding-right: 20px;
+}
+
+#game{
+  padding-right: 20px;
+}
+
+#team{
+  padding-right: 20px;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home.js"
+import Play from "./Play.js"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
     <Switch>
          <Route exact path="/" component={Home}/>
+         <Route exact path="/Play" component={Play}/>
     </Switch>
     </div>
     </Router>
