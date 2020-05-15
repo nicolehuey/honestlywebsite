@@ -1,0 +1,15 @@
+.previewdesc{
+  text-align: center;
+}
+
+.previewtitle{
+  margin:auto;
+}
+
+#name {
+  font-family: "Avenir-Black";
+  color:"black";
+  font-size: 10px;
+  padding: 38px;
+
+}

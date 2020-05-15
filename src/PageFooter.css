@@ -1,0 +1,47 @@
+#outro-part {
+    background-color: black;
+    color: #a7a8aa;
+    height: 100px;
+    text-align: center;
+    border-left-style: solid;
+    border-color: #7f8082;
+    padding-top: 50px;
+}
+
+.site-footer{
+  background-color: black;
+}
+  #outroname {
+    width: 80%;
+  }
+
+  #outro-links {
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+  }
+
+  .outro-buttons {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    background-color: white;
+    color: #a7a8aa;
+    border: none;
+    font-size: 30px;
+  }
+
+  .outro-buttons:hover {
+    background-color: white;
+    color: #a7a8aa;
+  }
+
+  .outro-buttons:focus {
+    background-color: white;
+    color: #a7a8aa;
+  }
+
+  .comingapp {
+    width: 20%;
+  }
