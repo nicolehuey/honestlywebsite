@@ -1,13 +1,18 @@
 .textblock
 {
   text-align: center;
-}
-.title
-{
-  margin-left: 20px;
-  font-size: 50px;
+  background-image: url('./img/main.png');
+  background-repeat: no-repeat;
+  background-size: 800px 900px;
+  height: 800px;
+  background-position: right;
 }
 
+.title
+{
+  margin-left: 30px;
+  font-size: 50px;
+}
 .description{
   text-align: left;
   margin:100px 0 0px 80px;
@@ -44,10 +49,17 @@
   background-size: cover;
 }
 
+.imagemain
+{
+  height: 50%;
+  width: 80%;
+  float: right;
+}
+
 .icons {
   font-size: 20px;
   padding-top: 30px;
-  margin-left: 800px;
+  margin-left: 900px;
   display: inline-block;
 }
 

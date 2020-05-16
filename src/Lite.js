@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
 import { Link } from "react-router-dom";
-import deepq from "./db/deepq.js"
+import basicq from "./db/basicq.js"
 import mainLayout from "./mainLayout.js";
 import "./Play.css"
 
-class Play extends Component {
+class Lite extends Component {
   state = {
     dataQuestion:[]
   };
@@ -51,7 +51,7 @@ class Play extends Component {
 
   setStatefunction = () => {
     //  use reactjs setState
-    let shuffled = deepq.sort( () => Math.random() - 0.5)
+    let shuffled = basicq.sort( () => Math.random() - 0.5)
     this.setState({
       dataQuestion: shuffled
     });
@@ -66,14 +66,14 @@ class Play extends Component {
     return (
       <div>
       <div className = "previewdesc">
-        <h2 className = 'previewtitle'> call a friend. grab a coffee. start your conversation! </h2>
-        <h3> (disclaimer: emotions at your own risk) </h3>
+        <h2 className = 'previewtitle'> call someone. grab a coffee. start your conversation! </h2>
+        <h3> (reminder: judging is a crime here) </h3>
       </div>
-      <div style={Play.CONTAINER_STYLE}>
+      <div style={Lite.CONTAINER_STYLE}>
       <ReactCardCarousel autoplay={false} autoplay_speed={2500}>
       {this.state.dataQuestion.map(data => {
         return(
-          <div style={Play.CARD_STYLE}>
+          <div style={Lite.CARD_STYLE}>
           {data.question}
           <p id = 'name'> honestly. </p>
           </div>
@@ -87,4 +87,4 @@ class Play extends Component {
   }
 }
 
-export default mainLayout(Play);
+export default mainLayout(Lite);

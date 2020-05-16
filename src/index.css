@@ -8,8 +8,14 @@ h2
 {
     font-family:"Avenir-BlackOblique";
 }
+
+h3
+{
+    font-family:"Avenir-Oblique";
+}
+
 * {
-text-decoration: none!important;
+text-decoration: none;
 }
 
 .link {

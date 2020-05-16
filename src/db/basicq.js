@@ -3,37 +3,49 @@ let basicq = [
         question: "What is your first impression about me?"
       },
       {
-        question: "How do you deal with sadness?"
+        question: "Describe each other in 3 words"
       },
       {
-        question: "Have you ever felt lonely before?"
+        question: "Have you once cried listening to a song?"
       },
       {
-        question: "What do you have faith in in life?"
-      },
-      {
-        question: "Do you think hope is important?"
-      },
-      {
-        question: "Do you find it hard to seek help from others?"
+        question: "Is there a time in your life you wish to go back?"
       },
       {
         question: "What is the most hurtful comment you'd ever received?"
       },
       {
-        question: "Do you believe in true friendship in opposite gender?"
+        question: "What kind of people triggers you?"
       },
       {
-        question: "What qualities do you look for in a partner?"
+        question: "What brings you joy?"
       },
       {
-        question: "Have you ever lost someone close to you?"
+        question: "What language do you wish you could speak?"
       },
       {
-        question: "What is the biggest regret in your life?"
+        question: "Do you think I'm introverted or extroverted?"
       },
       {
-        question: "What is the biggest regret in your life?"
+        question: "What enneagram type are you?"
+      },
+      {
+        question: "Who do you look up to the most?"
+      },
+      {
+        question: "What's your biggest fear?"
+      },
+      {
+        question: "Do you think I'm a confident person? Why?"
+      },
+      {
+        question: "Do you have a best friend?"
+      },
+      {
+        question: "Do you think we will be close friends?"
+      },
+      {
+        question: "Who inspires you the most?"
       }
 
 ]

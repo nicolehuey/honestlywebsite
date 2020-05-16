@@ -12,7 +12,7 @@ class PageHeader extends Component {
           <Link to="/" className='link'>
             <i class="fa fa-home" id='home'></i>
           </Link>
-          <Link to="/Play" className='link'>
+          <Link to="/Level" className='link'>
             <i class="fa fa-magnet" id = 'game'></i>
           </Link>
           <Link to="/Team" className='link'>

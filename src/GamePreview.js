@@ -12,7 +12,21 @@ class GamePreview extends Component {
     return (
       <div>
       <div className = "previewdesc">
-        <h2 className = 'previewtitle'> call a friend. grab a coffee. start playing! </h2>
+        <h2 className = 'previewtitle' style={{ textDecoration: 'underline black' }}> pick a set that suits you best! </h2>
+      </div>
+      <div className = "level">
+        <h3> conversations starter, perceptive, thoughtful </h3>
+        <h3> just starting to get to know someone better </h3>
+        <Link to="/Lite">
+        <button className = "play-button">LITE</button>
+        </Link>
+      </div>
+      <div className = "level">
+        <h3> raw, soul-baring, emotions-provoking </h3>
+        <h3> to know someone you already know, deeper </h3>
+        <Link to="/Deep">
+        <button className = "play-button">DEEP</button>
+        </Link>
       </div>
 
       </div>

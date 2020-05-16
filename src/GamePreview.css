@@ -5,3 +5,18 @@
 .previewtitle{
   margin:auto;
 }
+
+.level{
+  padding-top: 60px;
+  text-align: center;
+}
+
+.play-button{
+  font-family:"Avenir-Black";
+  font-size: 20px;
+  border-radius:2em;
+  padding:0.3em 1.2em;
+  background-color:	#000000;
+  color: #FFFFFF;
+  margin:0 0 0 0;
+}
