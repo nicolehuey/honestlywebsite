@@ -1,32 +1,27 @@
 import React, { Component } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { Sidebar, SidebarItem } from 'react-responsive-sidebar';
 import mainLayout from "./mainLayout.js";
-import '../node_modules/font-awesome/css/font-awesome.min.css';
-import about from "./img/people.png"
-import main from "./img/main.png"
+import about from "./img/desc.png"
+import main from "./img/main2.png"
 import Image from 'react-bootstrap/Image'
+import './font-awesome/css/font-awesome.min.css';
 
 class Home extends Component{
 
   render(){
     return(
       <div>
-        <body>
-          <div className ='textblock'>
-            <div className = "description">
-              <h2 className="desctext"> honest conversations. </h2>
-              <h2 className="desctext"> deeper relationships. </h2>
-              <h2 className="desctext"> real connections. </h2>
-            <Link to="/Level">
-            <button className = "playbutton">Play</button>
-            </Link>
-            </div>
-          </div>
-          <Image src={about} fluid className='imagecover'/>
-        </body>
-      </div>
+        <div>
+        <Image src={main} fluid className='imagecover'/>
+        </div>
+        <div className='play-div'>
+        <Link to="/Level" className='link'>
+          <button className = "playbutton">PLAY</button>
+        </Link>
+        </div>
+        <Image src={about} fluid className='imagecover'/>
+        </div>
     );
   }
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home.js"
 import Play from "./Play.js"
@@ -17,7 +17,6 @@ function App() {
          <Route exact path="/Lite" component={Lite}/>
          <Route exact path="/Level" component={GamePreview}/>
          <Route exact path="/Team" component={Team}/>
-
     </Switch>
     </div>
     </Router>

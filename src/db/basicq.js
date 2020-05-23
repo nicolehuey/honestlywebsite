@@ -30,6 +30,9 @@ let basicq = [
         question: "What enneagram type are you?"
       },
       {
+        question: "Coffee or tea?"
+      },
+      {
         question: "Who do you look up to the most?"
       },
       {
@@ -46,8 +49,34 @@ let basicq = [
       },
       {
         question: "Who inspires you the most?"
+      },
+      {
+        question: "Do you think I'm more rational or emotional?"
+      },
+      {
+        question: "Do you think I'm the youngest, eldest, middle or the only child?"
+      },
+      {
+        question: "What is your love language? both giving and receiving"
+      },
+      {
+        question: "What's your fondest memory?"
+      },
+      {
+        question: "If you were to live in a country forever, which would you choose?"
+      },
+      {
+        question: "What musical instrument you wish you could play?"
+      },
+      {
+        question: "Do you prefer staying indoor or outdoor?"
+      },
+      {
+        question: "Do you get angry easily?"
+      },
+      {
+        question: "What's a skill you wish to pick up?"
       }
-
 ]
 
 export default basicq;

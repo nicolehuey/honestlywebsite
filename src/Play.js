@@ -1,52 +1,17 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
 import { Link } from "react-router-dom";
 import deepq from "./db/deepq.js"
 import mainLayout from "./mainLayout.js";
 import "./Play.css"
+import TinderCard from './react-tinder-card/index'
 
 class Play extends Component {
+
   state = {
-    dataQuestion:[]
+    dataQuestion:[],
   };
-
-  static get CONTAINER_STYLE() {
-    return {
-      position: "relative",
-      height: "100vh",
-      width: "100%",
-      display: "flex",
-      flex: 0.3,
-      justifyContent: "center",
-      borderColor: '#FFFF00',
-      alignItems: "middle"
-    };
-  }
-
-  static get CARD_STYLE() {
-    return {
-      height: "420px",
-      width: "350px",
-      paddingTop: "80px",
-      paddingBottom: "80px",
-      paddingLeft: "80px",
-      paddingRight: "80px",
-      textAlign: "center",
-      color: "black",
-      background: "white",
-      fontFamily: "avenir-medium",
-      fontSize: "25px",
-      borderRadius: "10px",
-      borderColor: 'black',
-      borderTopStyle:'solid',
-      borderRightStyle:'solid',
-      borderLeftStyle:'solid',
-      borderBottomStyle:'solid',
-      boxSizing: "border-box"
-    };
-  }
-
 
 
   setStatefunction = () => {
@@ -57,31 +22,42 @@ class Play extends Component {
     });
   };
 
+  swiped = (direction, nameToDelete) => {
+    console.log('removing: ' + nameToDelete)
+  }
+
+  outOfFrame = (name) => {
+    console.log(name + ' left the screen!')
+  }
 
   componentDidMount() {
     this.setStatefunction();
+    window.scrollTo(0, 0);
+  }
+
+  submitfeedback(){
+    const url = 'https://forms.gle/JmZPNgm5pLA4VY75A';
+    window.open(url, '_blank');
   }
 
   render() {
     return (
-      <div>
+      <div className='main-preview'>
       <div className = "previewdesc">
-        <h2 className = 'previewtitle'> call a friend. grab a coffee. start your conversation! </h2>
+        <h2 className = 'previewtitle'>  take it slow. </h2>
         <h3> (disclaimer: emotions at your own risk) </h3>
       </div>
-      <div style={Play.CONTAINER_STYLE}>
-      <ReactCardCarousel autoplay={false} autoplay_speed={2500}>
-      {this.state.dataQuestion.map(data => {
-        return(
-          <div style={Play.CARD_STYLE}>
-          {data.question}
-          <p id = 'name'> honestly. </p>
-          </div>
-        );
-      })}
-      </ReactCardCarousel>
-      </div>
-
+        <div className='cardContainer'>
+          {this.state.dataQuestion.map((character) =>
+            <TinderCard className='swipe' key={character.question} onSwipe={(dir) => this.swiped(dir, character.question)} onCardLeftScreen={() => this.outOfFrame(character.question)}>
+              <div className='card' >
+                <h3 className='ques'>{character.question}</h3>
+                <h3 className = 'logoname'> honestly. </h3>
+              </div>
+            </TinderCard>
+          )}
+        </div>
+        <button className = "feedback-button" onClick={this.submitfeedback}>FEEDBACK US</button>
       </div>
     );
   }

@@ -1,22 +1,50 @@
 .previewdesc{
   text-align: center;
+  padding-top: 20px;
 }
 
 .previewtitle{
   margin:auto;
 }
 
+.explain {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
 .level{
   padding-top: 60px;
   text-align: center;
 }
 
 .play-button{
-  font-family:"Avenir-Black";
+  letter-spacing: 1px;
+  font-weight: bold;
   font-size: 20px;
   border-radius:2em;
   padding:0.3em 1.2em;
   background-color:	#000000;
   color: #FFFFFF;
   margin:0 0 0 0;
+}
+
+.boycover
+{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 60%;
+  max-height: 60%;
+  text-align: center;
+}
+
+.girlcover
+{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 70%;
+  max-height: 70%;
+  text-align: center;
 }

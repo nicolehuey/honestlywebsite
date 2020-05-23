@@ -58,6 +58,42 @@ let deepq = [
       },
       {
         question: "When was the last time you cried alone?"
+      },
+      {
+        question:"What are some things that you wished people knew about you?"
+      },
+      {
+        question:"Do you think the world will become worse or better?"
+      },
+      {
+        question:"Do you feel belonged at where you are right now?"
+      },
+      {
+        question:"Do you get socially drained easily?"
+      },
+      {
+        question:"What do you value the most in life?"
+      },
+      {
+        question:"How would you like others to motivate you?"
+      },
+      {
+        question:"Are you afraid to be vulnerable?"
+      },
+      {
+        question:"Will you continue if you are not reciprocated in a relationship?"
+      },
+      {
+        question:"What does love mean to you?"
+      },
+      {
+        question:"Where do you think we go when we die?"
+      },
+      {
+        question:"When was the last time you tell someone you love them?"
+      },
+      {
+        question:"What would you do today if you die tomorrow?"
       }
 
 ]

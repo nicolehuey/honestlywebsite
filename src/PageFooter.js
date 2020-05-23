@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import {Container,Row,Col} from 'react-bootstrap';
-import './PageFooter.css'
+import './Page.css'
 
 class PageFooter extends Component {
     render() {
         return (
-              <p> </p>
+          <p className='footer'> honestly. est 2020</p>
         );
     }
 }

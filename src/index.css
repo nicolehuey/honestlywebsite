@@ -1,17 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Avenir-Black'
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New','Avenir-Black',
+    monospace;
+}
+
 h1
 {
-  font-family: "Avenir-Black";
-  color:"black"
+  font-family: "Tahoma";
+  color:"black";
+  letter-spacing: 3px;
 }
 
 h2
 {
-    font-family:"Avenir-BlackOblique";
+    font-family:"Arial";
+    letter-spacing: 1px;
 }
+
 
 h3
 {
-    font-family:"Avenir-Oblique";
+    font-family:"Arial";
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 * {
@@ -20,7 +39,6 @@ text-decoration: none;
 
 .link {
    color: #000000;
-   font-family: "Avenir-Black";
 }
 
 .link:hover {
